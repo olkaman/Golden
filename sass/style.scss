@@ -40,6 +40,7 @@ h1 {
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 24px;
+        line-height: 46px;
 }
 
 h4 {
@@ -71,7 +72,6 @@ header {
         padding: 20px 0;
         z-index: 999;
 }
-
 
 .logo {
         width: 79px;
@@ -156,6 +156,7 @@ nav ul li a:hover {
 
 .welcome-text span {
         font-size: 75px;
+        line-height: 82px;
         text-transform: uppercase;
         font-weight: 700;
 }
@@ -255,6 +256,41 @@ footer ul li a i{
 }
 
 footer ul li a:hover {
-    transform: scale(1.1);
-    transition: $transition;
+        transform: scale(1.1);
+        transition: $transition;
+}
+
+@media only screen and (max-width: 1200px) {
+        nav ul li {
+                margin-right: 24px;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+        footer .item {
+                text-align: center;
+        }
+
+}
+
+@media only screen and (max-width: 768px) {
+        header .item, 
+        footer .item {
+                text-align: center;
+        }
+
+        footer ul li {
+                margin-right: 16px;
+        }
+
+        .welcome-text h1 {
+                font-size: 18px;
+                margin-bottom: 16px;
+        }
+
+        .welcome-text span {
+                font-size: 40px;
+                line-height: 46px;
+        }
 }
