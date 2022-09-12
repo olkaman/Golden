@@ -161,3 +161,44 @@ header .row {
         background-color: #c7a11e;
 }
 
+/*Services*/
+
+.services,
+.portfolio  {
+        text-align: center;
+        padding: 92px 0;
+}
+
+.services img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.services .row > div,
+.portfolio .row > div {
+  margin-top: 48px;
+}
+
+/*Portfolio*/
+
+.portfolio {
+        background-color: #f7f7f7;
+}
+
+.portfolio-item .caption {
+        background-color: $text-dark-background;
+        padding: 24px 0;
+        margin-top: -5px;
+}
+
+.portfolio-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        background-color: $text-dark-background;
+}
+
+.portfolio-item .caption h4 {
+        margin-bottom: 0;
+}
