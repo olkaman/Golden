@@ -53,6 +53,14 @@ p {
         margin: 0;
 }
 
+.align-items{
+        align-items: center;
+}
+
+.hidden {
+        display: none;
+}
+
 /*Header*/
 
 header {
@@ -68,6 +76,11 @@ header {
 .logo {
         width: 79px;
         height: auto;
+}
+
+.logo:hover {
+        transform: scale(1.1);
+        transition: $transition;
 }
 
 nav ul {
@@ -88,8 +101,9 @@ nav ul li a {
         font-weight: 500;
 }
 
-header .row {
-        align-items: center;
+nav ul li a:hover {
+        color: $accent-color;
+        transition: $transition;
 }
 
 /*Banner*/
@@ -136,6 +150,8 @@ header .row {
 .welcome-text h1 {
         color: $text-dark-background;
         margin-bottom: 48px;
+        text-transform: none;
+        font-weight: 400;
 }
 
 .welcome-text span {
@@ -199,6 +215,46 @@ header .row {
         background-color: $text-dark-background;
 }
 
+.portfolio-item img:hover {
+    opacity:  .8;
+    transition: $transition;
+}
+
 .portfolio-item .caption h4 {
         margin-bottom: 0;
+}
+
+/*Footer*/
+
+footer {
+        padding: 24px 0;
+}
+
+footer ul {
+        list-style-type: none;
+}
+
+footer ul li {
+        display: inline;
+        margin-right: 30px;
+}
+
+footer ul li a{
+        background-color: $header-text-color;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        line-height: 55px;
+        border-radius: 50%;
+        text-align: center;
+}
+
+footer ul li a i{
+        font-size: 20px;
+        color: $text-dark-background;
+}
+
+footer ul li a:hover {
+    transform: scale(1.1);
+    transition: $transition;
 }
